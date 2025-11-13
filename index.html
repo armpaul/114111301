@@ -3,13 +3,10 @@
 <head>
     <!-- 指定文件編碼為 UTF-8，以正確顯示中文字元 -->
     <meta charset="UTF-8">
-
     <!-- 響應式網頁設計的關鍵：確保在不同裝置上都有好的瀏覽體驗 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- 網頁標題，會顯示在瀏覽器的分頁上 -->
-    <title>我的網頁</title>
-
+    <title>Le Rêve Français - 法式夢境餐廳</title>
     <!-- 連結到外部 CSS 樣式表 -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,24 +14,75 @@
 
     <!-- 頁首區域：通常放置網站標題、Logo 或導覽列 -->
     <header>
-        <h1>歡迎來到我的網站</h1>
+        <h1>Le Rêve Français - 法式夢境餐廳</h1>
+        <nav>
+            <ul>
+                <li><a href="#menu">我們的菜單</a></li>
+                <li><a href="#location">餐廳位置</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- 主要內容區域：放置頁面的核心內容 -->
     <main>
-        <p>這是一個段落。您可以在這裡開始加入您的內容。</p>
-        <p>您可以新增更多元素，例如圖片、列表或連結。</p>
-        
-        <!-- 範例：一個圖片 -->
-        <!-- <img src="your-image.jpg" alt="圖片的描述文字"> -->
+        <!-- 菜單區塊 -->
+        <section id="menu">
+            <h2>我們的菜單 (Notre Menu)</h2>
 
-        <!-- 範例：一個連結 -->
-        <a href="https://www.google.com">這是一個前往 Google 的連結</a>
+            <article class="menu-category">
+                <h3>開胃菜 (Entrées)</h3>
+                <ul>
+                    <li>
+                        <h4>法式洋蔥湯 (Soupe à l'oignon)</h4>
+                        <p>以牛骨高湯為基底，加入焦糖化的洋蔥，頂部覆蓋著融化的格呂耶爾起司和香脆的麵包丁。</p>
+                    </li>
+                    <li>
+                        <h4>香煎鵝肝 (Foie Gras Poêlé)</h4>
+                        <p>頂級鵝肝以小火香煎，外皮酥脆，內部柔嫩，佐以無花果醬和陳年酒醋。</p>
+                    </li>
+                </ul>
+            </article>
+
+            <article class="menu-category">
+                <h3>主菜 (Plats Principaux)</h3>
+                <ul>
+                    <li>
+                        <h4>紅酒燉牛肉 (Bœuf Bourguignon)</h4>
+                        <p>經典勃根地名菜。精選牛肉塊與紅蘿蔔、洋蔥、蘑菇在紅酒中慢火燉煮，肉質軟嫩入味。</p>
+                    </li>
+                    <li>
+                        <h4>油封鴨腿 (Confit de Canard)</h4>
+                        <p>將鴨腿以鴨油和香料醃製後低溫慢煮，上桌前再將表皮煎至金黃酥脆，肉質細嫩多汁。</p>
+                    </li>
+                </ul>
+            </article>
+
+            <article class="menu-category">
+                <h3>甜點 (Desserts)</h3>
+                <ul>
+                    <li>
+                        <h4>法式烤布蕾 (Crème Brûlée)</h4>
+                        <p>柔滑的香草卡士達上覆蓋著一層薄脆的焦糖，是完美的飯後甜點。</p>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- 地圖與交通資訊區塊 -->
+        <section id="location">
+            <h2>餐廳位置 (Notre Emplacement)</h2>
+            <p>地址：台北市中正區重慶南路一段1號</p>
+            <!-- Google Map 內嵌地圖 -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.821398189511!2d121.5118480759329!3d25.04013893798952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a9726a32386d%3A0x633d4514da35633!2zMTAw5Y-w5YyX5biC5Lit5q2j5Y2A6YeN5q2j5Y2X6Lev5LiA5q61MQ!5e0!3m2!1szh-TW!2stw!4v1716361278888!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <br>
+            <!-- Google Map 導航連結 -->
+            <a href="https://www.google.com/maps/dir/?api=1&destination=%E5%8F%B0%E5%8C%97%E5%B8%82%E9%87%8D%E6%85%B6%E5%8D%97%E8%B7%AF1%E8%99%9F" target="_blank">點此開啟 Google Map 導航</a>
+        </section>
     </main>
 
     <!-- 頁尾區域：通常放置版權資訊、聯絡方式等 -->
     <footer>
-        <p>&copy; 2024 您的名字或公司名稱</p>
+        <p>&copy; 2024 Le Rêve Français. All rights reserved.</p>
     </footer>
 
     <!-- 連結到外部 JavaScript 檔案，通常放在 </body> 標籤前 -->
